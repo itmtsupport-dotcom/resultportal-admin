@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/admin/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/admin/favicon.png",
+      "destination": "/favicon.png"
+    },
+    {
+      "source": "/admin/favicon-16x16.png",
+      "destination": "/favicon-16x16.png"
+    },
+    {
+      "source": "/admin/favicon-32x32.png",
+      "destination": "/favicon-32x32.png"
+    },
+    {
+      "source": "/admin/apple-touch-icon.png",
+      "destination": "/apple-touch-icon.png"
+    },
+    {
+      "source": "/admin/android-chrome-192x192.png",
+      "destination": "/android-chrome-192x192.png"
+    },
+    {
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
