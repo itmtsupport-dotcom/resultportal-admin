@@ -189,6 +189,16 @@ export const updateResultItemScore = async (resultItemId, score) => {
   return response.data;
 };
 
+export const deleteResult = async (resultId) => {
+  const response = await api.delete(`/admin/results/${resultId}`);
+  return response.data;
+};
+
+export const deleteBulkResults = async (resultIds) => {
+  const response = await api.post(`/admin/results/bulk-delete`, { resultIds });
+  return response.data;
+};
+
 export const fetchResultPdf = async (resultId) => {
   const response = await api.get(`/admin/results/${resultId}/pdf`, {
     responseType: "blob"
