@@ -99,7 +99,7 @@ const TokensListPage = () => {
             </option>
           ))}
         </select>
-        <Link className="button secondary" to="/admin/tokens/generate">
+        <Link className="button secondary" to="/tokens/generate">
           Generate Token
         </Link>
       </div>
@@ -137,7 +137,7 @@ const TokensListPage = () => {
                   </td>
                   <td>{formatDate(token.expiresAt)}</td>
                   <td className="table-actions">
-                    <Link className="link-button" to={`/admin/tokens/view/${token.id}`}>
+                    <Link className="link-button" to={`/tokens/view/${token.id}`}>
                       View
                     </Link>
                   </td>
